@@ -1,0 +1,71 @@
+body {
+	padding: 0px;
+	margin: 0; }
+
+header { 
+	background-color: red;
+	padding-top: 30px;
+	text-align: center;
+
+	 }
+
+h1 { 
+	margin: 0 0 20px 0; text-align: center; }
+
+header h1 {
+	transition: all 2s;
+}
+header h1:hover {
+	background: yellow;
+	color: black;
+	padding: 25px 0;
+
+
+}	
+h2 { text-align: right; padding: 30px; text-transform: capitalize; color: white;}
+h2 span { color: red; }
+h3 { 
+	color: white;
+font-weight: bold;
+padding: 15px;
+margin: 0 }
+
+.bgyellow { background: yellow; }
+.bggreen { background: green; }
+.bgorange { background: orange; }
+.bgblue { background: blue; }
+.bgred { background: red; }	
+
+.col1, .col2, .col3 {
+	float: left;
+	max-width: 30%;
+	padding: 0 1em;
+}
+.col2 {
+border-left: dotted 4px red;
+border-right: dotted 4px blue;
+}
+
+.cabecera { background-image: url('../img/drwho02.jpg');
+background-size: contain; }
+
+.clearfix {
+	clear: both;
+}
+#autores { background: url("../img/drwho01.jpg"); padding: 2em; }
+#autores main { 
+margin: 0 auto; 
+width: 90%;
+background: white;
+padding-bottom: 1.5em; 
+}
+footer {
+	background-color: red;
+	text-align: center;
+	font-size: 2em;
+	background: linear-gradient(to left bottom, red, yellow, orange, blue, pink, indigo);
+	 }
+
+
+footer p { 
+	color: white; }
