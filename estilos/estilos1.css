@@ -1,0 +1,133 @@
+body {padding: 0px; margin: 0px;}
+header { background: orange; padding-top: 2em;}
+h1, h2 { text-align: center; } 
+footer { background: black; padding: 3em 0; color: #fff; text-align: center; font-size: 3em;}
+#flex1 {
+	display: flex;
+	flex-flow: row-reverse; wrap;
+}
+
+#flex1 div {
+	width: 200px;
+	height: 200px;
+	border: solid 1px green;
+	text-align: center;
+	font-size: 3em;
+	color: green;
+}
+
+#flex2 {
+	display: flex;
+	justify-content: space-between;
+}
+
+#flex2 div {
+	width: 200px;
+	height: 200px;
+	border: solid 1px red;
+	text-align: center;
+	font-size: 3em;
+	color: red;
+}
+
+
+	#flex3 {
+	display: flex;
+	align-items: stretch;
+	height: 500px;
+}
+
+#flex3 div {
+	width: 200px;
+	
+	border: solid 1px yellow;
+	text-align: center;
+	font-size: 3em;
+	color: yellow;
+	background: blue;
+}
+
+#flex4 {
+	display: flex;
+	align-items: baseline;
+	background: green;
+	height: 500px;
+}
+#flex4 div.altura1 {height: 150px; width: 200px;}
+#flex4 div.altura2 {height: 350px; width: 200px; padding bottom: 30px;}
+#flex4 div.altura3 {height: 450px; width: 200px;}
+#flex4 div.altura4 {height: 250px; width: 200px; padding-bottom: : 55px;}
+
+.altura1, .altura2, .altura3, .altura4 {
+	border: solid 2px red;
+}
+
+#flex4 div {
+	width: 200px;
+	color: white;
+	text-align: center;
+	font-size: 3em;
+}
+
+#flex5 {
+	display: flex;
+	align-content: flex-center;
+	flex-flow: row wrap;
+	height: 700px;
+	background: green;
+}
+#flex5 div{
+	width: 150px;
+	height: 150px;
+	color: black;
+	text-align: center;
+	font-size: 3em;
+	border: red solid 1px;
+}
+
+#item1 {
+	display: flex;
+	flex-flow: row wrap;
+	background: green;
+	height: 500px;
+
+}
+
+#item1 div {
+	flex-grow: 1;
+	width: 200px;
+	height: 200px;
+	border: solid 1px white;
+	text-align: center;
+	font-size: 3em;
+	background: red;
+}
+
+#item1 div.w3 {
+	flex-grow: 4;
+	order: 1;
+}
+
+#item2 {
+	display: flex;
+	flex-flow: row;
+	background: green;
+	height: 500px;
+}	
+#item2 div { 
+	
+	height: 200px;
+	border: solid 1px white;
+	text-align: center;
+	font-size: 3em;
+	background: red;
+	flex-basis: 25%;
+ }
+
+ #item2 div.w2 {
+ 	flex-basis: 15%;
+ }
+
+ #item2 div.w4 {
+ 	flex-basis: 35%;
+ }
