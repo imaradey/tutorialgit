@@ -1,0 +1,129 @@
+body {margin:0px; padding: 0px;}
+header {background: orange; padding-top: 2em;}
+h1, h2 {text-align: center;}
+
+footer {background: black; padding: 3em 0;}
+
+/* PROPIEDADES FLEX CONTAINER */
+#flex-1{
+	display: flex;
+	/*flex-direction: row; row row-reverse column column-reverse*/
+	/*flex-wrap: wrap-reverse;nowrap wrap wrap-reverse */
+	flex-flow: row-reverse wrap; 
+}
+
+#flex-1 div {
+	width: 200px;
+	height: 200px;
+	border: solid 1px green;
+	text-align: center;
+	font-size: 3em;
+	color: green;
+}
+#flex-2 {
+	display: flex;
+	justify-content: space-around; /*flex-start flex-end center space-between space-around*/
+}
+#flex-2 div {
+	width: 200px;
+	height: 200px;
+	border: solid 1px purple;
+	text-align: center;
+	font-size: 3em;
+	color: purple;
+}
+
+#flex-3 {
+	display: flex;
+	align-items: stretch; /* flex-start flex-end center stretch baseline */
+
+	background: green;
+	height: 500px;
+}
+#flex-3 div {
+	width: 200px;
+	/*height: 200px;*/ /* el valor strecth requiere que el elemento no tenga altura para que sea evidente */
+	border: solid 2px pink;
+	text-align: center;
+	font-size: 3em;
+	color: pink;
+}
+#flex-4 {
+	display: flex;
+	align-items: baseline; /* flex-start flex-end center stretch baseline */
+	background: green;
+	height: 500px;
+}
+
+#flex-4 div.alt-1{height: 100px; padding-top: 20px;}
+#flex-4 div.alt-2{height: 300px; padding-top: 30px;}
+#flex-4 div.alt-3{height: 250px; padding-top: 10px;}
+#flex-4 div.alt-4{height: 200px; padding-top: 50px;}
+
+.alt-1, .alt-2, .alt-3, .alt-4 {border: solid 2px red;}
+#flex-4 div {
+	width: 200px;
+	text-align: center;
+	font-size: 3em;
+	color: white;
+}
+
+#flex-5 {
+	display: flex;
+	align-content:space-around;
+	flex-flow: row wrap;
+	background: red;
+	height: 700px;
+}
+#flex-5 div {
+	width: 200px;
+	height: 100px;
+	border: solid 2px white;
+	text-align: center;
+	font-size: 3em;
+	color: white;
+}
+
+/* PROPIEDADES FLEX ITEM*/
+#fitem-1 {
+	display: flex;
+	flex-flow: row wrap;
+
+	background: green;
+	height: 500px;
+}
+#fitem-1 div {
+	flex-grow: 1;
+
+	width: 200px;
+	height: 200px;
+	border: solid 2px white;
+	text-align: center;
+	font-size: 3em;
+	color: white;
+}
+#fitem-1 div.w3 {
+	flex-grow: 5;
+	order:1; /*Modifica el orden de aparición de un elemento*/
+}
+
+
+#fitem-2 {
+	display: flex;
+	flex-flow: row wrap;
+
+	background: blue;
+	height: 500px;
+}
+#fitem-2 div {
+	flex-basis:10%;
+
+	height: 200px;
+	border: solid 2px white;
+	text-align: center;
+	font-size: 3em;
+	color: white;
+}
+#fitem-2 div.b3 {
+	flex-basis: 50%;
+}

@@ -1,0 +1,83 @@
+/*grid containers*/
+
+h1,h2,h3 {
+	color: white;
+}
+
+.gcont1  {
+	display: grid;
+	background: pink;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-columns: repeat(3, auto); /*shorthand de la de arriba*/S
+}
+.gcont1 div {
+	background: orange;
+	border: solid 1px white;
+	padding: 1em;
+	text-align: center;
+}
+.gcont2 {
+	display: grid;
+	background: red;
+	grid-template-columns: repeat(3, auto); 
+	grid-template-rows: 300px auto 500px; 
+}
+
+.gcont2 div {
+	background: orange;
+	border: solid 1px white;
+	padding: 1em;
+	text-align: center;
+}
+
+.gcont3 {
+	display: grid;
+	background: red;
+	grid-template-columns: repeat(3, auto); /*shorthand de la de arriba*/
+	grid-template-rows: repeat(3, 150px);
+	grid-column-gap: 1em; /*define espacio entre columnas*/
+	grid-row-gap: 1em; /*define espacio entre filas*/
+	grid-row: /*shorthand para ambas */
+}
+
+.gcont3 div {
+	background: orange;
+	border: solid 1px white;
+	padding: 1em;
+	text-align: center;
+}
+
+.gcont3 {
+	display: grid;
+	background: red;
+	grid-template-columns: repeat(3, 200px);
+	grid-template-rows: repeat(3, 150px);
+	justify-content: space-around; /*igual que en el flex*/
+	align-content: space-around;
+	height: 500px;
+}
+
+.gcont3 div {
+	background: orange;
+	border: solid 1px white;
+	padding: 1em;
+	text-align: center;
+}
+
+
+
+body {
+	background-color: blue;
+}
+/*h1 {
+	text-align: right;
+}
+
+@media screen and (min-width: 700px) {
+	body { background-color: red; }
+}
+
+@media screen and (min-width: 1000px) {
+	body { background-color: orange; }
+}
+*/
